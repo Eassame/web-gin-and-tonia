@@ -7,7 +7,6 @@
     />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/enquire.css" />
     <title>Gin&Tonia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -22,17 +21,17 @@
         <h6>Mobile Gin Bar</h6>
         <nav>
           <div>
-            <a href="/pages/index.html">Home</a>
-            <a href="/pages/gallery.html">Gallery</a>
-            <a href="/pages/gin.html">Our Gin</a>
-            <a href="/pages/enquire.html" class="active">Enquire</a>
-            <a href="/pages/information.html">Information</a>
+            <a href="/index.html">Home</a>
+            <a href="/gallery.html" class="active">Gallery</a>
+            <a href="/gin.html">Our Gin</a>
+            <a href="/enquire.html">Enquire</a>
+            <a href="/information.html">Information</a>
           </div>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main class="galleryPage">
       <div class="socialBanner">
         <div class="content">
           <a target="_blank" href="https://www.facebook.com/ginemporium/">
@@ -46,50 +45,18 @@
           </a>
         </div>
       </div>
-      <div class="info">
-        <p>
-          Whatever you are planning, a wedding, exhibition, corporate event or
-          indeed any celebration, we offer a bespoke mobile bar service to
-          fulfill you requirements
-        </p>
-        <p>
-          When you choose GIN & TONIA mobile bar hire we listen to your every
-          need, advising and helping you in any way possible, ensuring you have
-          a professional service tailor made just for you.
-        </p>
-        <p>
-          Think about your package, you may want a cash bar where your guests
-          pay for their drinks. A free bar allowing you to agree a designated
-          amount and when this reached you revert to a cash bar. Complimentary
-          bar where all drinks are free to your guests, of course we keep an eye
-          on the costs for you. There is also a voucher bar or combinations of
-          different methods.
-        </p>
-        <p>
-          If you have any questions please contact us by filling out the form
-          below and we will get in touch with you shortly. Alternatively, you
-          can give us a call - we hope to hear from you soon!
-        </p>
-      </div>
-      <div class="contact-us">
-        <form id="contactUsForm">
-          <h3>Contact Us</h3>
-          <label>Name:</label>
-          <input type="text" name="name" />
-          <label>Email:</label>
-          <input type="email" name="email" />
-          <label>phone:</label>
-          <input type="text" name="phone" />
-          <label>Message:</label>
-          <textarea type="text" name="message"></textarea>
-          <div class="button">
-            <p id="response"></p>
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
+      <h2 class="gallery">Gallery</h2>
+      <div class="verticalImages">
+        <img src="/static/gallery-1.jpg" />
+        <img src="/static/homepage-2.webp" />
+        <img src="/static/gallery-3.jpg" />
+        <img src="/static/homepage-1.jpg" />
+        <img src="/static/hompage-5.jpg" />
+        <div>
+          <p>Click our social media links to see more!</p>
+        </div>
       </div>
     </main>
-
     <footer>
       <div class="content">
         <h4>Where to contact us!</h4>
@@ -113,6 +80,5 @@
         </div>
       </div>
     </footer>
-    <script src="/js/contact.js" type="text/javascript" />
   </body>
 </html>
