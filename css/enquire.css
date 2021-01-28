@@ -1,0 +1,84 @@
+.info {
+  padding: 20px;
+  background-color: #3b2f2f;
+}
+
+.info p {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.contact-us {
+  padding: 20px 0;
+}
+
+.contact-us #contactUsForm {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-us #contactUsForm h3 {
+  color: #d2af41;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.contact-us #contactUsForm label {
+  color: #d2af41;
+  margin-bottom: 10px;
+}
+
+.contact-us #contactUsForm input,
+.contact-us #contactUsForm textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.contact-us #contactUsForm textarea {
+  height: auto;
+  resize: none;
+  overflow: auto;
+  height: 100px;
+}
+
+.contact-us #contactUsForm .button {
+  text-align: right;
+}
+
+.contact-us #contactUsForm .button button {
+  background-color: #d241c0;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 140px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.contact-us #contactUsForm .button button:hover {
+  cursor: pointer;
+  background-color: #c13eb1;
+}
+
+@media (max-width: 780px) {
+  .contact-us {
+    padding: 0;
+  }
+  .contact-us #contactUsForm {
+    border-radius: 0;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=enquire.css.map */

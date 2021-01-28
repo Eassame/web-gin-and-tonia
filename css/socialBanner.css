@@ -1,0 +1,26 @@
+.socialBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background-color: #d2af41;
+}
+
+.socialBanner .content {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socialBanner .content img {
+  width: 64px;
+  height: 64px;
+}
+/*# sourceMappingURL=socialBanner.css.map */

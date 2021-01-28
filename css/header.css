@@ -1,0 +1,75 @@
+header {
+  color: #d2af41;
+  background-color: #000000;
+  z-index: 1;
+}
+
+header .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0 20px;
+}
+
+header .container h1 {
+  font-size: 55px;
+  text-align: center;
+}
+
+header .container h6 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  border-top: #ffffff 1px solid;
+  border-bottom: #ffffff 1px solid;
+  padding: 20px 0;
+  font-family: "Satisfy", cursive;
+  color: #d241c0;
+}
+
+header .container nav {
+  margin-top: 30px;
+  overflow-x: scroll;
+  padding: 0 20px;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+header .container nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 850px;
+  margin: auto;
+}
+
+header .container nav a {
+  border-radius: 25px;
+  min-width: 137px;
+  -webkit-transition: background-color 0.13s linear, color 0.13s linear;
+  transition: background-color 0.13s linear, color 0.13s linear;
+  text-align: center;
+  padding: 15px 25px;
+  color: #ffffff;
+}
+
+header .container nav a:hover, header .container nav a.active {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+header .container nav a:hover a, header .container nav a.active a {
+  color: #d2af41;
+}
+
+header .container nav::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=header.css.map */

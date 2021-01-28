@@ -1,0 +1,15 @@
+.socialBanner {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #d2af41;
+  .content {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}

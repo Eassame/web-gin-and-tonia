@@ -1,0 +1,98 @@
+.introduction p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.introduction p:first-child {
+  padding-top: 20px;
+  margin: 0 0 20px;
+}
+
+.introduction p span {
+  font-family: "Gloria Hallelujah", cursive;
+  color: #d241c0;
+  font-size: 22px;
+}
+
+.ginPage h2 {
+  max-width: 1000px;
+  margin: 20px auto 30px;
+  padding: 0 20px;
+  font-size: 28px;
+  color: #d2af41;
+}
+
+.ginPage .ginList {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ginPage .ginList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(33% - 15px);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.ginPage .ginList li > img {
+  -webkit-animation: spin 35s infinite linear;
+          animation: spin 35s infinite linear;
+  margin-right: 10px;
+}
+
+@media (max-width: 780px) {
+  .ginPage .ginList li {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .ginPage .ginList li {
+    width: 100%;
+  }
+}
+
+.ginPage h4 {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  font-size: 24px;
+  margin-top: 20px;
+  color: #d241c0;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=gin.css.map */

@@ -1,0 +1,60 @@
+header {
+  color: #d2af41;
+  background-color: #000000;
+  z-index: 1;
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0 20px;
+    h1 {
+      font-size: 55px;
+      text-align: center;
+    }
+    h6 {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 30px;
+      border-top: #ffffff 1px solid;
+      border-bottom: #ffffff 1px solid;
+      padding: 20px 0;
+      font-family: "Satisfy", cursive;
+      color: #d241c0;
+    }
+    nav {
+      margin-top: 30px;
+      overflow-x: scroll;
+      padding: 0 20px;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 850px;
+        margin: auto;
+      }
+      a {
+        border-radius: 25px;
+        min-width: 137px;
+        transition: background-color 0.13s linear, color 0.13s linear;
+        text-align: center;
+        padding: 15px 25px;
+        color: #ffffff;
+
+        &:hover,
+        &.active {
+          background-color: #333333;
+          cursor: pointer;
+          a {
+            color: #d2af41;
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}

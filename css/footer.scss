@@ -1,0 +1,64 @@
+@import "./mixins.scss";
+footer {
+  padding: 20px 30px;
+  background-color: #3b2f2f;
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    h4 {
+      color: #ffffff;
+      font-size: 20px;
+      margin: 0 0 20px;
+    }
+
+    .contactUs {
+      display: flex;
+      > div,
+      > a {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        img {
+          height: 48px;
+          margin-right: 20px;
+        }
+        p {
+          color: #d2af41;
+          font-size: 18px;
+        }
+      }
+      @include tablet {
+        flex-direction: column;
+        > div {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      .copyright {
+        color: #ffffff;
+        font-size: 12px;
+      }
+      .drinkResponsibly {
+        font-size: 12px;
+        color: #ffffff;
+        a {
+          color: #ffffff;
+          text-decoration: underline;
+        }
+      }
+      @include tablet {
+        flex-wrap: wrap;
+        p {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

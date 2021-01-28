@@ -1,0 +1,166 @@
+@import "./header.scss";
+@import "./socialBanner.scss";
+@import "./footer.scss";
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 20px auto 0;
+  width: calc(100% - 200px);
+  img {
+    float: left;
+    width: calc(20% - 10px);
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  @include smallScreens {
+    max-width: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    img {
+      width: 50%;
+      border-radius: 0;
+    }
+  }
+
+  @include tablet {
+    margin-top: 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.quotes {
+  padding-top: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: space-between;
+  .quote {
+    text-align: center;
+    border-left: 1px solid #d2af41;
+    padding: 0 20px;
+    h2 {
+      font-family: "Satisfy", cursive;
+      font-size: 40px;
+      color: #d241c0;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 24px;
+      padding: 0 20px;
+    }
+
+    &:first-child {
+      border-left: 0;
+    }
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+    padding-top: 0;
+    margin-bottom: 20px;
+    .quote {
+      border-top: 1px solid #d2af41;
+      padding: 30px 0;
+      width: 100%;
+    }
+  }
+}
+
+.galleryPage {
+  h2.gallery {
+    color: #3b2f2f;
+    font-size: 28px;
+    max-width: 1000px;
+    margin: 30px auto 10px;
+    padding: 0 20px;
+    color: #d2af41;
+  }
+  .verticalImages {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 960px;
+    border-radius: 10px;
+    overflow: hidden;
+    img,
+    div {
+      width: 33.333%;
+      object-fit: cover;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border-right: 1px dashed #d2af41;
+      border-bottom: 1px dashed #d2af41;
+      padding: 10px;
+      border-bottom-right-radius: 10px;
+      p {
+        width: 100%;
+        font-family: "Gloria Hallelujah", cursive;
+        color: #d241c0;
+        font-size: 24px;
+      }
+    }
+  }
+  @include smallScreens {
+    .verticalImages {
+      border-radius: 0;
+      width: 100%;
+    }
+  }
+
+  @include tablet {
+    .verticalImages {
+      img,
+      div {
+        width: 50%;
+      }
+    }
+  }
+
+  @include mobile {
+    .verticalImages {
+      img,
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.informationPage {
+  .container {
+    padding-top: 30px;
+    h2 {
+      max-width: 1000px;
+      margin: 0 auto 30px;
+      padding: 0 20px;
+      font-size: 24px;
+    }
+    p {
+      max-width: 1000px;
+      margin: 0 auto 20px;
+      padding: 0 20px;
+      font-size: 18px;
+      color: #e26271;
+    }
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+main {
+  min-height: calc(100vh - 263px - 160px);
+  margin-top: 263px;
+}

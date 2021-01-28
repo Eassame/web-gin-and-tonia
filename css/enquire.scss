@@ -1,0 +1,70 @@
+@import "./mixins.scss";
+.info {
+  padding: 20px;
+  background-color: #3b2f2f;
+  p {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+.contact-us {
+  padding: 20px 0;
+  #contactUsForm {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 5px;
+    h3 {
+      color: #d2af41;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    label {
+      color: #d2af41;
+      margin-bottom: 10px;
+    }
+    input,
+    textarea {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      height: 30px;
+      border-radius: 3px;
+    }
+    textarea {
+      height: auto;
+      resize: none;
+      overflow: auto;
+      height: 100px;
+    }
+    .button {
+      text-align: right;
+      button {
+        background-color: #d241c0;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        width: 140px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 3px;
+        color: #ffffff;
+        &:hover {
+          cursor: pointer;
+          background-color: #c13eb1;
+        }
+      }
+    }
+  }
+  @include tablet {
+    padding: 0;
+    #contactUsForm {
+      border-radius: 0;
+      max-width: 100%;
+    }
+  }
+}
