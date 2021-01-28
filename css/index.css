@@ -203,7 +203,7 @@ footer .content .bottom .drinkResponsibly a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1400px;
-  margin: 20px auto 0;
+  margin: 20px auto 20px;
   width: calc(100% - 200px);
 }
 
@@ -299,7 +299,7 @@ footer .content .bottom .drinkResponsibly a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 960px;
