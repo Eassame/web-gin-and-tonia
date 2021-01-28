@@ -42,7 +42,17 @@
       height: 100px;
     }
     .button {
-      text-align: right;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #response {
+        color: #ffffff;
+        font-size: 18px;
+
+        &.error {
+          color: red;
+        }
+      }
       button {
         background-color: #d241c0;
         outline: none;
